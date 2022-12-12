@@ -1,4 +1,7 @@
 /node_modules
+/design
+Readme-template.md 
+style-guide.md
 
 *.sketch
 *.fig
