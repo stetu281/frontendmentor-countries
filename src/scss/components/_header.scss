@@ -1,0 +1,35 @@
+.header {
+  padding: 2rem 0;
+  background-color: $white;
+  box-shadow: 0 3px 3px 0 rgba($dark--elements, 0.2);
+  @extend %transition;
+
+  &__content {
+    @extend %content-w;
+    @extend %flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    font-size: 1rem;
+  }
+
+  &__button {
+    font-size: 0.875rem;
+
+    i {
+      padding-right: 0.25rem;
+      pointer-events: none;
+    }
+  }
+
+  @include breakpoint(738px) {
+    &__logo {
+      font-size: 1.5rem;
+    }
+
+    &__button {
+      font-size: 1rem;
+    }
+  }
+}

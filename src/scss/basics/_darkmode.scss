@@ -1,0 +1,12 @@
+body.dark {
+  color: $white;
+  background-color: $dark--bg;
+
+  .header {
+    background-color: $dark--elements;
+
+    &__button {
+      color: $white;
+    }
+  }
+}

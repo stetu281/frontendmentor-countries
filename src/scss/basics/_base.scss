@@ -1,0 +1,6 @@
+body {
+  background-color: $light--bg;
+  font-family: "Nunito Sans", sans-serif;
+  color: $light--text;
+  @extend %transition;
+}

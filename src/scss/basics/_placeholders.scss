@@ -1,0 +1,19 @@
+%content-w {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1200px;
+}
+
+%flex {
+  display: flex;
+  align-items: center;
+}
+
+%flex-c {
+  @extend %flex;
+  justify-content: center;
+}
+
+%transition {
+  transition: all 0.3s ease-in-out;
+}
