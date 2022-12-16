@@ -1,7 +1,7 @@
 .header {
   padding: 2rem 0;
   background-color: $white;
-  box-shadow: 0 3px 3px 0 rgba($dark--elements, 0.2);
+  box-shadow: 0 3px 3px 0 rgba($dark--elements, 0.05);
   @extend %transition;
 
   &__content {
