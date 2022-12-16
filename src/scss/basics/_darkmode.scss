@@ -9,4 +9,25 @@ body.dark {
       color: $white;
     }
   }
+
+  .options {
+    &__search {
+      background: $dark--elements
+        url("../images/magnifying-glass-solid-white.svg");
+      background-repeat: no-repeat;
+      background-size: 1.25rem;
+      background-position: left 2rem center;
+      &::placeholder {
+        color: $white;
+      }
+    }
+
+    &__select {
+      color: $white;
+      background: $dark--elements url("../images/chevron-down-solid-white.svg");
+      background-repeat: no-repeat;
+      background-size: 0.825rem;
+      background-position: right 1.5rem center;
+    }
+  }
 }
