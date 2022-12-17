@@ -1,0 +1,29 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 3px 3px 0 rgba($dark--elements, 0.05);
+
+  img {
+    width: 100%;
+    aspect-ratio: 3 / 1.8;
+    object-fit: cover;
+  }
+
+  &__text {
+    padding: 2rem 1.5rem 3rem 1.5rem;
+    background-color: $white;
+
+    span {
+      font-weight: 600;
+    }
+
+    & p {
+      padding: 0.125rem 0;
+      &:first-of-type {
+        margin-top: 1rem;
+      }
+    }
+  }
+}

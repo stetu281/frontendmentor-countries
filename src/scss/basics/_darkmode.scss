@@ -30,4 +30,12 @@ body.dark {
       background-position: right 1.5rem center;
     }
   }
+
+  .card {
+    color: $white;
+
+    &__text {
+      background-color: $dark--elements;
+    }
+  }
 }
