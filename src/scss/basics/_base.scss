@@ -4,3 +4,7 @@ body {
   color: $light--text;
   @extend %transition;
 }
+
+main {
+  position: relative;
+}

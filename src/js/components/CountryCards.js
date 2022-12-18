@@ -3,11 +3,10 @@ import { getData } from "../tools/tools";
 export const CountryCards = async () => {
   const cardContainer = document.querySelector(".cardContainer");
   const data = await getData();
-  console.log(data);
   for (let item of data) {
-    console.log(item);
     let card = document.createElement("div");
     card.className = "card";
+    card.id = `${item.alpha3Code}`;
     card.innerHTML = `
             <img src="${item.flag}" alt="Country Flag" />
             <div class="card__text">

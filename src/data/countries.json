@@ -145,7 +145,7 @@
     "area": 28748,
     "gini": 33.2,
     "timezones": ["UTC+01:00"],
-    "borders": ["MNE", "GRC", "MKD", "UNK"],
+    "borders": ["MNE", "GRC", "MKD", "XXK"],
     "nativeName": "Shqipëria",
     "numericCode": "008",
     "flags": {
@@ -8936,7 +8936,7 @@
     "area": 25713,
     "gini": 33,
     "timezones": ["UTC+01:00"],
-    "borders": ["ALB", "BGR", "GRC", "UNK", "SRB"],
+    "borders": ["ALB", "BGR", "GRC", "XXK", "SRB"],
     "nativeName": "Македонија",
     "numericCode": "807",
     "flags": {
@@ -10033,7 +10033,7 @@
     "area": 13812,
     "gini": 38.5,
     "timezones": ["UTC+01:00"],
-    "borders": ["ALB", "BIH", "HRV", "UNK", "SRB"],
+    "borders": ["ALB", "BIH", "HRV", "XXK", "SRB"],
     "nativeName": "Црна Гора",
     "numericCode": "499",
     "flags": {
@@ -12200,7 +12200,7 @@
     "name": "Republic of Kosovo",
     "topLevelDomain": [""],
     "alpha2Code": "XK",
-    "alpha3Code": "UNK",
+    "alpha3Code": "XXK",
     "callingCodes": ["383"],
     "capital": "Pristina",
     "altSpellings": ["XK", "Република Косово"],
@@ -13355,7 +13355,7 @@
     "area": 88361,
     "gini": 36.2,
     "timezones": ["UTC+01:00"],
-    "borders": ["BIH", "BGR", "HRV", "HUN", "UNK", "MKD", "MNE", "ROU"],
+    "borders": ["BIH", "BGR", "HRV", "HUN", "XXK", "MKD", "MNE", "ROU"],
     "nativeName": "Србија",
     "numericCode": "688",
     "flags": {

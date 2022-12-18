@@ -1,0 +1,84 @@
+.details {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  background-color: $light--bg;
+  transition: left 0.5s;
+  overflow-y: scroll;
+
+  &--open {
+    left: 0;
+  }
+
+  &__content {
+    @extend %content-w;
+    padding: 8rem 0 5rem 0;
+  }
+
+  &__button {
+    padding: 0.5rem 1.5rem;
+    background-color: $white;
+    box-shadow: 0 0 8px 4px rgba($dark--elements, 0.15);
+
+    i {
+      padding-right: 0.5rem;
+    }
+  }
+
+  &__dynamicContent {
+    img {
+      width: 100%;
+      margin-top: 3rem;
+    }
+
+    h2 {
+      margin-top: 2rem;
+    }
+
+    p {
+      padding: 0.25rem 0;
+
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+
+  &__infos {
+    &--primary {
+      margin-top: 1rem;
+    }
+
+    &--secondary {
+      margin-top: 2rem;
+    }
+  }
+
+  &__bordersContainer {
+    margin-top: 2rem;
+
+    h3 {
+      font-weight: 600;
+    }
+  }
+
+  &__borders {
+    margin-top: 1rem;
+    @extend %flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+
+    button {
+      font-size: 0.825rem;
+      box-shadow: 0 0 4px 2px rgba($dark--elements, 0.15);
+    }
+  }
+
+  @include breakpoint(768px) {
+    &__content {
+      padding-top: 10rem;
+    }
+  }
+}

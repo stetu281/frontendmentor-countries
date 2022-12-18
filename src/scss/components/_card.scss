@@ -3,17 +3,23 @@
   flex-direction: column;
   border-radius: 0.5rem;
   overflow: hidden;
-  box-shadow: 0 3px 3px 0 rgba($dark--elements, 0.05);
+  @extend %shadow;
+
+  &:hover {
+    cursor: pointer;
+  }
 
   img {
     width: 100%;
     aspect-ratio: 3 / 1.8;
     object-fit: cover;
+    pointer-events: none;
   }
 
   &__text {
     padding: 2rem 1.5rem 3rem 1.5rem;
     background-color: $white;
+    pointer-events: none;
 
     span {
       font-weight: 600;

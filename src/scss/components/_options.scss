@@ -1,7 +1,7 @@
 .options {
   &__content {
     @extend %content-w;
-    padding: 2rem 0;
+    padding: 8rem 0 2rem 0;
   }
 
   &__form {
@@ -43,7 +43,7 @@
 
   @include breakpoint(768px) {
     &__content {
-      padding: 3rem 0;
+      padding: 10rem 0 3rem 0;
     }
 
     &__form {
