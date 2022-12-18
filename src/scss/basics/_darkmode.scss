@@ -38,4 +38,13 @@ body.dark {
       background-color: $dark--elements;
     }
   }
+
+  .details {
+    background-color: $dark--bg;
+
+    &__button {
+      background-color: $dark--elements;
+      color: $white;
+    }
+  }
 }

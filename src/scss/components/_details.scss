@@ -3,10 +3,10 @@
   position: fixed;
   top: 0;
   bottom: 0;
-  left: 100%;
+  left: -100%;
   background-color: $light--bg;
   transition: left 0.5s;
-  overflow-y: scroll;
+  overflow-y: auto;
 
   &--open {
     left: 0;
@@ -27,28 +27,25 @@
     }
   }
 
-  &__dynamicContent {
-    img {
-      width: 100%;
-      margin-top: 3rem;
-    }
+  &__img {
+    width: 100%;
+    margin-top: 3rem;
+  }
 
+  &__text {
     h2 {
       margin-top: 2rem;
-    }
-
-    p {
-      padding: 0.25rem 0;
-
-      span {
-        font-weight: 600;
-      }
     }
   }
 
   &__infos {
-    &--primary {
-      margin-top: 1rem;
+    margin-top: 1rem;
+
+    p {
+      padding: 0.25rem 0;
+      span {
+        font-weight: 600;
+      }
     }
 
     &--secondary {
@@ -56,22 +53,18 @@
     }
   }
 
-  &__bordersContainer {
+  &__borders {
     margin-top: 2rem;
-
-    h3 {
-      font-weight: 600;
-    }
   }
 
-  &__borders {
+  &__borderButtons {
     margin-top: 1rem;
     @extend %flex;
     flex-wrap: wrap;
     gap: 0.75rem;
 
     button {
-      font-size: 0.825rem;
+      font-size: 0.875rem;
       box-shadow: 0 0 4px 2px rgba($dark--elements, 0.15);
     }
   }
@@ -79,6 +72,48 @@
   @include breakpoint(768px) {
     &__content {
       padding-top: 10rem;
+    }
+  }
+
+  @include breakpoint(1024px) {
+    &__wrapper {
+      margin-top: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__img {
+      width: 45%;
+    }
+
+    &__text {
+      margin-left: 5rem;
+      width: 50%;
+    }
+
+    &__infos {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+
+      &--secondary {
+        margin-top: unset;
+      }
+    }
+
+    &__borders {
+      display: flex;
+      align-items: center;
+
+      h3 {
+        font-size: 1rem;
+      }
+    }
+
+    &__borderButtons {
+      width: 70%;
+      margin: 0 0 0 1rem;
     }
   }
 }
