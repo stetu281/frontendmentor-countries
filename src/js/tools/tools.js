@@ -1,4 +1,5 @@
 import Data from "../../data/countries.json";
+import { BorderButtons } from "../components/BorderButtons";
 const getCountryISO2 = require("country-iso-3-to-2");
 
 export const getData = async () => {
@@ -38,6 +39,8 @@ export const renderCard = (item) => {
 };
 
 export const renderDetails = (country) => {
+  let container = document.querySelector(".details__dynamic");
+  container.innerHTML = "";
   let details = document.createElement("div");
   details.className = "details__wrapper";
   details.innerHTML = `
@@ -69,7 +72,7 @@ export const renderDetails = (country) => {
               country.borders
                 ? country.borders
                     .map((border) => {
-                      return `<button class="details__button">${convertCountryCode(
+                      return `<button class="details__button" id=${border}>${convertCountryCode(
                         border
                       )}</button>`;
                     })
@@ -80,5 +83,5 @@ export const renderDetails = (country) => {
           </div>
         </div>
         `;
-  return details;
+  container.append(details);
 };

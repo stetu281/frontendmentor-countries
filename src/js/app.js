@@ -3,6 +3,7 @@ import { Darkmode } from "./components/Darkmode";
 import { CountryCards } from "./components/CountryCards";
 import { getData } from "./tools/tools";
 import { Details } from "./components/Details";
+import { BorderButtons } from "./components/BorderButtons";
 
 getDetails();
 Darkmode();
@@ -15,6 +16,7 @@ async function getDetails() {
     if (e.target && e.target.matches(".card")) {
       document.querySelector(".details").classList.add("details--open");
       Details(e.target.id, data);
+      BorderButtons(data);
     }
   });
 }
