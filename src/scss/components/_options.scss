@@ -18,9 +18,23 @@
     background-position: left 2rem center;
     padding: 1rem 1rem 1rem 5rem;
     color: $light--input;
+    position: relative;
 
     &::placeholder {
       color: $light--input;
+    }
+  }
+
+  &__error {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid red;
+    background-color: rgba(red, 0.05);
+    width: 100%;
+    max-width: 400px;
+
+    &--hide {
+      display: none;
     }
   }
 

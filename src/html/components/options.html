@@ -1,12 +1,19 @@
 <section class="options">
   <div class="options__content">
-    <form class="options__form">
-      <input
-        type="search"
-        name="search"
-        class="options__search"
-        placeholder="Search for a country..."
-      />
+    <form class="options__form" onsubmit="event.preventDefault()">
+      <div class="options__searchContainer">
+        <input
+          type="search"
+          name="search"
+          class="options__search"
+          placeholder="Search for a country..."
+        />
+        <p class="options__error options__error--hide">
+          Please make sure the input field is not empty and the country name is
+          spelled correct
+        </p>
+      </div>
+
       <select name="region" class="options__select">
         <option value="" disabled selected hidden>Filter by Region</option>
         <option value="africa">Africa</option>
