@@ -1,12 +1,11 @@
-import Data from "../../data/countries.json";
-import { BorderButtons } from "../components/BorderButtons";
+/* import Data from "../../data/countries.json"; */
 const getCountryISO2 = require("country-iso-3-to-2");
 
 export const getData = async () => {
   try {
-    /*     const res = await fetch("https://restcountries.com/v2/all");
-    const data = await res.json(); */
-    return Data;
+    const res = await fetch("https://restcountries.com/v2/all");
+    const data = await res.json();
+    return data;
   } catch (error) {
     console.error("Error:", error);
   }
