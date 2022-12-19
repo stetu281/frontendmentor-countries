@@ -24,19 +24,6 @@
     }
   }
 
-  &__error {
-    margin-top: 0.5rem;
-    padding: 0.5rem;
-    border: 1px solid red;
-    background-color: rgba(red, 0.05);
-    width: 100%;
-    max-width: 400px;
-
-    &--hide {
-      display: none;
-    }
-  }
-
   &__select {
     padding: 1rem 4rem 1rem 1.5rem;
     appearance: none;

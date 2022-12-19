@@ -2,7 +2,6 @@ import { renderCard } from "../tools/tools";
 
 export const Search = (data) => {
   const searchBar = document.querySelector(".options__search");
-  const errorMessage = document.querySelector(".options__error");
 
   searchBar.addEventListener("keydown", (e) => {
     if (e.key == "Enter" && searchBar.value !== "") {
@@ -10,10 +9,9 @@ export const Search = (data) => {
         if (country.name.toLowerCase() == searchBar.value.toLowerCase()) {
           document.querySelector(".cardContainer").innerHTML = "";
           renderCard(country);
-        } else {
-          errorMessage.classList.remove("options__error--hide");
         }
       }
+      searchBar.value = "";
     }
   });
 };
