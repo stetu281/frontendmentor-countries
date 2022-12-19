@@ -4,11 +4,17 @@ import { CountryCards } from "./components/CountryCards";
 import { getData } from "./tools/tools";
 import { Details } from "./components/Details";
 
-Darkmode();
-CountryCards();
 getDetails();
+Darkmode();
 
 async function getDetails() {
   const data = await getData();
-  Details(data);
+  CountryCards(data);
+
+  document.querySelector(".cardContainer").addEventListener("click", (e) => {
+    if (e.target && e.target.matches(".card")) {
+      document.querySelector(".details").classList.add("details--open");
+      Details(e.target.id, data);
+    }
+  });
 }
