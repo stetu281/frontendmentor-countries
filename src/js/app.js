@@ -4,6 +4,7 @@ import { CountryCards } from "./components/CountryCards";
 import { getData } from "./tools/tools";
 import { Details } from "./components/Details";
 import { BorderButtons } from "./components/BorderButtons";
+import { RegionFilter } from "./components/RegionFilter";
 
 getDetails();
 Darkmode();
@@ -11,6 +12,7 @@ Darkmode();
 async function getDetails() {
   const data = await getData();
   CountryCards(data);
+  RegionFilter(data);
 
   document.querySelector(".cardContainer").addEventListener("click", (e) => {
     if (e.target && e.target.matches(".card")) {

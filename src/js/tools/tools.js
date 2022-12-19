@@ -35,7 +35,7 @@ export const renderCard = (item) => {
               <p><span>Capital:</span> ${item.capital}</p>
           </div>
   `;
-  return card;
+  document.querySelector(".cardContainer").append(card);
 };
 
 export const renderDetails = (country) => {
